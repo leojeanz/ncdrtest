@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+      $("button").click(function(){
+            $("#chgicon").attr("src",$("#t1").val()+"_"+$("#t2").val()+"_"+$("#t3").val()+".gif");
+      });
+});
+</script> <title>Document</title>
+  </head>
+  <body>
+    <p><br>
+    </p>
+    <br>
+    <table style="width: 100%" border="1">
+      <tbody>
+        <tr>
+          <td style="width: 111.333px;">流域</td>
+        </tr>
+        <tr>
+          <td>基期與世紀末</td>
+        </tr>
+        <tr>
+          <td>結果展示</td>
+        </tr>
+        <tr>
+          <td><br>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p><br>
+    </p>
+    <p><br>
+    </p>
+    <p><br>
+    </p>
+    <p><br>
+    </p>
+    <br>
+    流域
+    <select name="s1" id="t1">
+      <option value="1">曾文溪</option>
+    </select>
+    <br>
+    <br>
+    基期與世紀末TOP Event
+    <select name="s2" id="t2">
+      <option value="1">198202</option>
+      <option value="2">208303</option>
+    </select>
+    <br>
+    <br>
+    衝擊展示
+    <select name="s3" id="t3">
+      <option value="1">颱風路徑</option>
+      <option value="2">累積時雨量</option>
+      <option value="3">總降雨量</option>
+    </select>
+    <br>
+    <br>
+    <button>送出查詢</button><br>
+    <br>
+    <img src="1_1_1.gif" id="chgicon">
+    <p> <span class="boldBlue">Bubbleup</span> �����@�몺�ϥܿ�湳
+�w�w�@�˪���j�u�X�C���ƹ����J��Ϥ��W�ɯ�b��ϲ��Ͱʵe�u�X�B��j���ĪG�F���ƹ����X��S��h�^���æ^�_��j�p�C<a
+
+        name="more"></a> <br>
+      <br>
+      <br>
+      <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+      <script type="text/javascript" src="http://demonstration.abgne.tw/jquery/plugins/0095/js/jquery.bubbleup.js"></script>
+      <style type="text/css">
+div#demo {
+ margin: 5px auto 5px auto;
+ text-align: center;
+}
+div#demo ul#menu {
+    margin: 5px 0px;
+    list-style: none;
+    display: inline-block;
+}   
+div#demo ul#menu li {
+    padding: 0px;
+    float: left;
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 48px;
+    height: 48px;
+}
+div#demo ul#menu li a {
+    position: absolute;
+}
+div#demo ul#menu li img {
+    position: absolute;
+    width: 48px;
+    top: 0px;
+    left: 0px;
+    padding: 0px;
+    margin: 0 8px 0 0;
+    border: none;
+    overflow: hidden;
+}
+</style> <script type="text/javascript">
+ $(function(){
+  // �� #menu �ন Bubbleup �ĪG
+  // �P�ɷ��ƹ����J����ɥX�{��r����
+  $("div#demo ul#menu li img").bubbleup({
+   tooltip: true, 
+   scale: 96
+  });
+ });
+</script> </p>
+    <div id="demo">
+      <ul id="menu">
+        <li> <a href="test1.html"> <img src="calamityIcon150Black_RA.png"
+
+              alt="typhoon"></a> </li>
+        <li> <a href="test2.html"> <img src="calamityIcon150Black_RA.png"
+
+              alt="rain"></a> </li>
+        <li> <a href="test3.html"> <img src="calamityIcon150Black_FL.png"
+
+              alt="flood"></a> </li>
+        <li> <a href="test4.html"> <img src="calamityIcon150Black_TS.png"
+
+              alt="storm surge"></a> </li>
+        <li> <a href="test5.html"> <img src="calamityIcon150Black_WSC.png"
+
+              alt="loss"></a> </li>
+      </ul>
+    </div>
+    <div style="clear: both;"> </div>
+  </body>
+</html>

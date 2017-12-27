@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="zh-tw"><head>
+<meta content='猛甲茶葉行與坪林茶廠產銷合作，由茶農精心烘培製作的頂級台灣茗茶，喉韻渾厚、 茶葉香醇自然回甘！貨真價實的上等好茶等你來品嘗。,網址http://eagle1024.blogspot.com/,信箱roberchen3@gmail.com,聯絡電話：0952916626' name='description'/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+
+</head>
+
+<body>
+<p>
+<span class="boldBlue">Bubbleup</span> 能讓一般的圖示選單像泡泡一樣的放大彈出。當滑鼠移入到圖片上時能在原圖產生動畫彈出且放大的效果；當滑鼠移出後又能退回原位並回復原大小。<a name='more'></a>
+<br><br><br>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="http://demonstration.abgne.tw/jquery/plugins/0095/js/jquery.bubbleup.js"></script>
+<style type="text/css">
+div#demo {
+ margin: 5px auto 5px auto;
+ text-align: center;
+}
+div#demo ul#menu {
+    margin: 5px 0px;
+    list-style: none;
+    display: inline-block;
+}   
+div#demo ul#menu li {
+    padding: 0px;
+    float: left;
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 48px;
+    height: 48px;
+}
+div#demo ul#menu li a {
+    position: absolute;
+}
+div#demo ul#menu li img {
+    position: absolute;
+    width: 48px;
+    top: 0px;
+    left: 0px;
+    padding: 0px;
+    margin: 0 8px 0 0;
+    border: none;
+    overflow: hidden;
+}
+</style>
+<script type="text/javascript">
+ $(function(){
+  // 把 #menu 轉成 Bubbleup 效果
+  // 同時當滑鼠移入到選單時出現文字提示
+  $("div#demo ul#menu li img").bubbleup({
+   tooltip: true, 
+   scale: 96
+  });
+ });
+</script>
+ <div id="demo">
+ <ul id="menu">
+<li> <a href="http://hala999.net/contact.php"> <img src="http://goo.gl/5J1O4K" alt="E-Mail Delivery"/></a> </li>
+<li> <a href="http://hala999.net/forum.php"> <img src="http://goo.gl/5UThLp" alt="討論區"/></a> </li>
+<li> <a href="http://www.facebook.com/tearoad/"> <img src="http://goo.gl/6uvwZA" alt="I'm on FaceBook"/></a> </li>
+<li> <a href="https://plus.google.com/"> <img src="http://goo.gl/1U0sdl" alt="google+!"/></a> </li>
+<li> <a href="http://hala999.net/board.php"> <img src="http://goo.gl/UsRhbb" alt="留言板"/></a> </li>
+</ul>
+</div>
+<div style="clear: both;">
+</div>
+</body>
+</html>

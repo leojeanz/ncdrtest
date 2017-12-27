@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+     $("#b1").click(function(){
+            $("#chgicon").attr("src","./flood/f"+$("#t1").val()+"_"+$("#t2").val()+"_"+$("#t3").val()+".gif");
+         
+         var o=document.getElementById("showhide");
+         o.style.visibility='visible';
+     });
+ });
+</script> <title>Document</title>
+  </head>
+   <style type="text/css">
+div#img1 img{
+width:70vw;/*只調整寬度,長度就會隨著寬度固定比例變化*/
+   
+       }</style>
+       
+  <body bgcolor="orange">
+    <br>
+    流域
+    <select name="s1" id="t1">
+      <option value="1">曾文溪</option>
+    </select>
+    <br>
+    <br>
+    分析年份
+    <select name="s2" id="t2">
+      <option value="1">198202</option>
+        <option value="2">208303</option>
+    </select>
+    基期/世紀末
+    <br>
+    <br>
+    結果展示
+    <select name="s3" id="t3">
+      <option value="1">淹水歷程</option>
+      <option value="2">最大淹水深</option>
+      <option value="3">損失評估</option>
+    </select>
+    <br>
+    <br>
+    <button id=b1>送出查詢</button><br>
+    <br>
+    <div id="img1">
+    <img src="./flood/f1_1_1.gif" id="chgicon">
+    
+    <br>
+             
+    
+    </div>
+    
+    <div id="showhide" style="visibility:hidden">
+    調適選項<button>none</button><br>
+    災害潛勢<button>rising dike</button><button>more pump</button><button>larger detention area</button><br>
+    暴露量<button>疏散</button><button>土力利用調整</button><br>
+    脆弱度<button>演練</button><button>防救災</button><button>備災行為</button><br>
+    </div>
+    
+  </body>
+</html>
